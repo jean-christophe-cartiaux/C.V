@@ -5,3 +5,11 @@
     padding: 15px;
     margin: 25px;
 }
+
+.btn{
+    height: 2rem;
+    width: 5rem;
+}
+.inputLargeur{
+    width:25rem
+}
