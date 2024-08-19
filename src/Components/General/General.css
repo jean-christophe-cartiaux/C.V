@@ -4,4 +4,12 @@
     border-radius: 5px;
     padding: 15px;
     margin: 25px;
+    background-color: #c7c3c3;
+}
+.btn{
+    height: 2rem;
+    width: 5rem;
+}
+.btn:hover{
+    background-color: orange;
 }

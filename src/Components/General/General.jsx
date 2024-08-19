@@ -28,7 +28,7 @@ const General=()=>{
                     <p> Prenom:{prenom}</p>
                     <p> Email:{email}</p>
                     <p> GSM:{phone}</p>
-                    <button onClick={()=>setEditMode(true)}>Edit</button>
+                    <button onClick={()=>setEditMode(true)} className='btn'>Edit</button>
                 </div>
             )
             }

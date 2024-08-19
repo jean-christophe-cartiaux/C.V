@@ -1,4 +1,8 @@
 .titre{
-    background-color: aqua;
+    background-color: #c7c3c3;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 25px;
 }
