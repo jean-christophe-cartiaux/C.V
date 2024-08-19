@@ -49,6 +49,20 @@ const XpTravail=()=>{
         updateExperience[index][key]=value;
         setExperiences(updateExperience);
     }
+    const handleDelete=(index)=>{
+        const updateExperience=experiences.filter((_,i)=>i !== index);
+        setExperiences(updateExperience);
+    }
+    const handleAddExperience=() => {
+        const newExperience={
+            titre:'',
+            annee:'',
+            description:''
+        };
+        setExperiences([...experiences, newExperience]);
+        setEditMode(true);
+
+    }
     return(
         <div className="global">
             <h2>XP TRAVAIL</h2>
@@ -67,6 +81,7 @@ const XpTravail=()=>{
                     <h3 className='textLigne'>{experience.titre}</h3>
                     <br/>
                     <p>{experience.annee} : {experience.description}</p>
+                    <button onClick={()=>handleDelete(index)} className='btn'>Delete</button>
 
 
                 </div>
@@ -83,7 +98,9 @@ const XpTravail=()=>{
                     <br/>
                 <button onClick={handleEdit} className='btn'>Edit</button>
                 </>
+
             )}
+                <button onClick={handleAddExperience} className='btnAdd'>Ajout New Experience </button>
         </div>
     )
 }
